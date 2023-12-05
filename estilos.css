@@ -1,0 +1,306 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {  
+    background-image: url(34.png);
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 150%;
+    text-align: center; 
+    background-size: 100%;
+}
+body::-webkit-scrollbar {
+    width: 0.01px; /* Ancho de la barra de desplazamiento */
+}
+
+
+.contenedor {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-areas:'barra barra barra'
+                        'card card card'
+                        't-port t-port t-port'
+                        'p1 p2 p3'
+                        'acerca acerca acerca'
+                        'contacto contacto contacto'
+                        'redes redes redes'
+                        'footer footer footer';
+}
+
+
+.cj {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.barra                                           {
+    grid-area: barra;
+}
+.navbar {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-fluid {
+    height: 3.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9af3f;
+    padding: 0;
+    border-bottom: solid black 0.4rem;
+}
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 145%;
+    padding: 0 1rem 0 1rem;
+}
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0.7em 0em 0em 0em;
+}
+.navbar-nav .nav-item {
+    flex: 1;
+    text-align: center;
+}
+.nav-link {
+    padding-bottom: 0.55em;
+}
+.nav-link:hover {
+    border-bottom: solid #F9AF3F 0.4em;
+}
+
+
+.Card                                            {
+    grid-area: card;
+}
+.card {
+    margin: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    position: relative;
+    width: 20em ;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 1em;
+}
+.card-img-top {
+    border-radius: 50%;
+    padding: 1em;
+}
+
+
+.TituloPortfolio {
+    grid-area: t-port;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding-top: 1em;
+}
+.p1                                              {
+    grid-area: p1;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.p2                                              {
+    grid-area: p2;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.p3                                              {
+    grid-area: p3;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.pag {
+    display: inline;
+    padding-bottom: 2em;
+}
+.img {
+    height: auto;
+    width: 100%;
+    padding: 1em;
+    border-radius: 1.5em ;
+}
+
+
+.acerca                                          {
+    grid-area: acerca;
+}
+.Acerca {
+    height: auto;
+    margin: 5% 10% 5% 10%;
+    padding: 2% 5% 2% 5%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 1em;
+}
+
+
+.contacto                                        {
+    background-color: rgb(0, 0, 0, 0.5);
+    grid-area: contacto;
+}
+.contáctame {
+    margin: 0.5em 0 0.5em 0;
+    padding: 0.25em;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.5);
+    border-radius: 0.2em;
+}
+.divform {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0% 10% 3% 10%;
+    color: var(--bs-gray-600);
+}
+.form-control {
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: x-large;
+    border: solid #F9AF3F 0.08em;
+} 
+.form-control:hover{
+    box-shadow: 0 0 0 0.25rem hsla(36, 94%, 61%, 0.5);
+}
+.form-control:focus{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.form-control:valid{
+    color: rgba(249, 175, 63, 0.75);
+}
+.form-control:invalid {
+    color: rgba(249, 175, 63, 0.75);
+}
+.sexo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 3.1em;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0.3em;
+    border: solid #F9AF3F 0.08em;
+    margin-bottom: 0.8em;
+}
+#mensajeInput {
+    height: 7.5em;
+}
+.btn-group {
+    width: 100%;
+}
+.btn {
+    border: solid 0.1rem #F9AF3F;
+    color: #F9AF3F;
+    font-size: 105%;
+    --bs-btn-active-bg: #000000;
+    --bs-btn-active-border-color: #F9AF3F;
+    --bs-btn-active-color: #F9AF3F;
+}
+.btn:hover{
+    background-color: #F9AF3F;
+    color: #000000;
+    border: solid 0.1rem #F9AF3F;
+}
+
+
+.redes                                             {
+    grid-area: redes;
+}
+.redes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10em;
+    width: 100%;
+    background-color: black;
+}
+.borderedes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+svg {
+    width: auto;
+    height: 4em;
+    padding: 1em;
+    color: #F9AF3F;
+}
+svg:hover {
+    border-left: solid 0.1em #F9AF3F ;
+    border-right: solid 0.1em #F9AF3F ;
+}
+
+
+.footer                                         {
+    grid-area: footer;
+    margin: 0;
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F9AF3F;
+    height: 4em;
+  }
+
+
+@media (max-width: 720px) {
+    .contenedor {
+    grid-template-areas:'barra barra barra'
+                        'card card card'
+                        't-port t-port t-port'
+                        'p1 p1 p1'
+                        'p2 p2 p2'
+                        'p3 p3 p3'
+                        'acerca acerca acerca'
+                        'contacto contacto contacto'
+                        'redes redes redes'
+                        'footer footer footer';
+  }
+  body {
+    background-size: auto 100%;
+    font-size: 120%;
+    max-width: 100%;
+  }
+  .container-fluid {
+    display: inline;
+    padding-top: 5mm;
+    height: 6.6em;
+    background-color: #f9af3f;
+  }
+  .nav-link {
+    padding-bottom: 0.45em;
+  }
+  .card {
+    padding: 0;
+    margin: 2em 0 3em 0;
+    text-align: center;
+    position: relative;
+  }
+  .Acerca {
+    font-size: 90%;
+    padding: 1em;
+    margin: 5em 1em 5em 1em;
+  }
+  svg {
+    width: 3em ;
+    padding: 0.5em;
+  }
+  .footer {
+    font-size: 90%;
+  }
+} 
